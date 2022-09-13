@@ -15,8 +15,6 @@ int _islower(int c)
 	{
 		if (letter == c)
 			lower = 1;
-		else
-			lower = 0;
 	}
 	return (lower);
 }
