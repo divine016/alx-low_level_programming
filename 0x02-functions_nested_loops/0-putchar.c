@@ -1,12 +1,19 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _putchar - write the char c to stdout
- *  @c: The character to print
- *
- * Return: On Success 1
+ * main - Entry point
+ * Return: On Success 0
 */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+	char word[9] = "_putchar";
+	int i;
+
+	for (i = 0; i < 9; i++)
+	{
+		putchar(word[i]);
+	}
+	putchar('\n');
+
+	return (0);
 }
