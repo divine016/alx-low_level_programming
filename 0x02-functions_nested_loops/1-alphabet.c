@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * main - Entry point
+ *  print_alphabet - Check description
  *
- * Return: Always 0 (Success)
+ * Description: It prints the alphabet in lowercase fallowed by a new line
+ *
+ * Return: Nothing
 */
 void to_print_alphabet(void)
 {
