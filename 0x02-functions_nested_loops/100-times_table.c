@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_times_table - prints times table for numbers from 
+ * print_times_table - prints times table for numbers from
  * @n: An input integer value
  * Return: Nothing
  */
