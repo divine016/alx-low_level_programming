@@ -16,7 +16,7 @@ void times_table(void)
 			if ((prod / 10) == 0)
 			{
 				if (prod != 0)
-					_putchar(',');
+					_putchar(' ');
 				_putchar(prod + '0');
 
 				if (mult == 9)
