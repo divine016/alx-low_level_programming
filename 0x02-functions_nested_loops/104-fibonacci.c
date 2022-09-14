@@ -6,7 +6,7 @@
 int main(void)
 {
 	int i;
-	long int fibonacci[98];
+	long int fibonacci[96];
 
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
