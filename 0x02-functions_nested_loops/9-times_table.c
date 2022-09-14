@@ -12,16 +12,18 @@ void times_table(void)
 	{
 		for (mult = 0; mult <= 9; mult++)
 		{
-			prod = i * j;
+			prod = num * mult;
 			if ((prod / 10) == 0)
 			{
-				_putchar(',')
+				if (prod != 0)
+					_putchar(',');
+				_putchar(prod + '0');
+
+				if (mult == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
 			}
-			_putchar(prod + '0');
-			if (mult == 9)
-				continue;
-			_putchar(',');
-			_putchar(' ');
 			else
 			{
 				_putchar((prod / 10) + '0');
