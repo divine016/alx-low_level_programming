@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_times_table - prints times table for numbers from 0-14
+ * print_times_table - prints times table for numbers from 
  * @n: An input integer value
  * Return: Nothing
  */
@@ -8,7 +8,7 @@ void print_times_table(int n)
 {
 	int num, prod;
 
-	if (n > 0 && n < 15)
+	if (n >= 0 && n < 15)
 	{
 		for (num = 0; num <= n; num++)
 		{
