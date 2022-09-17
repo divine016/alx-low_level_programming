@@ -3,7 +3,7 @@
  * print_square - A function used to print a square
  * @size: An input interger
 */
-void print_square(int size);
+void print_square(int size)
 {
 	if (size > 0)
 	{
