@@ -3,7 +3,7 @@
  * _strncat - a function that concatenates two strings.
  * @dest: an input string
  * @src: an input string
- * @numb: an input integer
+ * @n: an input integer
  * Return: A pointer to the resulting string
 */
 
@@ -16,14 +16,14 @@ char *_strncat(char *dest, char *src, int n)
 	while (*src)
 	{
 		srclen++;
-		src++'
+		src++;
 	}
 
 	while (*dest)
 		dest++;
 
-	if (numb > srclen)
-		numb = srclen;
+	if (n > srclen)
+		n = srclen;
 
 	src = start;
 	for (i = 0; i < n; i++)
@@ -32,7 +32,7 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	*dest = '\0';
-	return (temp)
+	return (temp);
 
 
 }
