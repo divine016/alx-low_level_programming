@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * wildcmp - compare two strings with possible wildcards
- * @s1: string 
+ * @s1: string
  * @s2: string
  * Return:int 0 or 1
  */
