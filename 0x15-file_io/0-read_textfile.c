@@ -1,5 +1,11 @@
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <fcntl.h>
 #include "main.h"
-
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * read_textfile - Reads a text file and prints it to POSIX stdout.
  * @filename: A pointer to the name of the file.
@@ -22,10 +28,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	fd = open(filename, O_RDONLY);
-	r = read(fd, buffer, letters);
-	w = write(STDOUT_FILENO, buffer, rd);
+	rd = read(fd, buffer, letters);
+	wr = write(STDOUT_FILENO, buffer, rd);
 
-	if (fd == -1 || rd == -1 || wr == -1 || wr != r)
+	if (fd == -1 || rd == -1 || wr == -1 || wr != rd)
 	{
 		free(buffer);
 		return (0);
